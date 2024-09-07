@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "f3afeffa-f69f-4170-a62d-e213c5212528",
+		"name": "Funcionario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37691558"
+	},
+	"item": [
+		{
+			"name": "listAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionario/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionario",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeFuncionario\": \"Marcão\",\r\n    \"cargo\": \"Cientista\",\r\n    \"departamento\":\"Ciencias\",\r\n    \"dataAdmissao\":\"2024-01-01\",\r\n    \"email\":\"marcao@gmail.com\",\r\n    \"telefone\":\"(46) 98805-0822\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": 2,\r\n    \"nomeFuncionario\": \"Marcão Carvalho\",\r\n    \"cargo\": \"Cientista\",\r\n    \"departamento\": \"Ciencias\",\r\n    \"dataAdmissao\": \"2024-01-01T00:00:00.000+00:00\",\r\n    \"email\": \"marcao@gmail.com\",\r\n    \"telefone\": \"(46) 98805-0822\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionario/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionario",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
